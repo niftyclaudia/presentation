@@ -74,7 +74,7 @@ export default function Deck() {
       {/* fixed chrome — difference-blended so it reads on black or white */}
       <div className="chrome">
         <div className="hdr">
-          <Logo size={16} />
+          <Logo size={15} mark={false} />
           <div className="r">
             <span className="sec">{slide.section}</span>
             <span>{pad(idx + 1)} / {pad(n)}</span>

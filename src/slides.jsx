@@ -1,5 +1,5 @@
 import {
-  Item, Rule, Logo, Photo,
+  Item, Rule, Logo, BrandLogo, Photo,
   MessageScene, SalaryTable,
 } from './components.jsx'
 import GridField from './GridField.jsx'
@@ -29,8 +29,8 @@ export const SLIDES = [
     Content: () => (
       <>
         <GridField />
-        <Item i={0}><Logo size={16} /></Item>
-        <Item i={1} as="h1" className="displg" style={{ marginTop: 26 }}>
+        <Item i={0}><BrandLogo white height="clamp(72px, 9vw, 108px)" /></Item>
+        <Item i={1} as="h1" className="displg" style={{ marginTop: 30 }}>
           The Reality Check.
         </Item>
         <Item i={2} className="sub" style={{ maxWidth: '50ch', marginTop: 22 }}>
@@ -46,7 +46,7 @@ export const SLIDES = [
     section: 'Open',
     Content: () => (
       <div className="cols">
-        <Photo seed="laschicas-team-portrait" w={900} h={1125} ratio="4 / 5"
+        <Photo src="/assets/team.jpg" ratio="16 / 11"
           alt="Claudia, Nani and Vanes" caption="Las chicas, G3" />
         <div className="col">
           <Item i={2} as="h2" className="hlg">
@@ -268,8 +268,8 @@ export const SLIDES = [
             in three weeks. That proof outlasts the interview.
           </Item>
         </div>
-        <Photo seed="capstone-demo-day-stage" w={1000} h={750} ratio="4 / 3"
-          alt="Capstone demo on stage" caption="Capstone demo day" i={1} />
+        <Photo src="/assets/stage.jpg" ratio="16 / 10"
+          alt="Capstone demo on stage" caption="Capstone demo day, Build a D1 Athlete" i={1} />
       </div>
     ),
   },
@@ -286,9 +286,9 @@ export const SLIDES = [
         <Item i={1} as="h2" className="disp">
           Now go survive the job.
         </Item>
-        <Item i={2} className="stack" style={{ marginTop: 32 }}>
+        <Item i={2} className="stack" style={{ marginTop: 34 }}>
           <span className="names">Claudia, Nani and Vanes</span>
-          <Logo size={20} />
+          <BrandLogo white height="clamp(52px, 6vw, 76px)" />
         </Item>
       </>
     ),

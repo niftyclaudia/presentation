@@ -61,25 +61,38 @@ export function Rule({ delay = 0, style }) {
   )
 }
 
-/* Logo — laschicas.ai wordmark + geometric mark (placeholder, swap-ready) */
-export function Logo({ size = 18, type = true, gap = 10 }) {
+/* Logo — text wordmark (used in the running header chrome). */
+export function Logo({ size = 18, type = true, mark = true, gap = 10 }) {
   return (
     <span className="logo" style={{ gap, fontSize: size * 0.92 }}>
-      <span className="mark" style={{ width: size, height: size }} />
+      {mark && <span className="mark" style={{ width: size, height: size }} />}
       {type && <span>laschicas.ai</span>}
     </span>
+  )
+}
+
+/* BrandLogo — the real laschicas.ai mark (transparent PNG).
+   `white` inverts the black artwork to render on dark slides. */
+export function BrandLogo({ height = 'clamp(64px, 8vw, 96px)', white = false }) {
+  return (
+    <img
+      className="brand-logo"
+      src="/assets/logo-stacked.png"
+      alt="laschicas.ai"
+      style={{ height, filter: white ? 'invert(1)' : 'none' }}
+    />
   )
 }
 
 /* Photo — real grayscale photography in a clean frame.
    Uses picsum seeds as swap-ready placeholders; replace the src with
    the real team / stage shot. Caption sits BELOW the frame, never on it. */
-export function Photo({ seed, w, h, ratio = '4 / 5', alt, caption, i = 1 }) {
+export function Photo({ src, seed, w, h, ratio = '4 / 5', alt, caption, i = 1 }) {
+  const url = src || `https://picsum.photos/seed/${seed}/${w}/${h}?grayscale`
   return (
     <Item i={i} className="figure">
       <div className="photo" style={{ aspectRatio: ratio }}>
-        {/* TODO: swap picsum src for the real photo */}
-        <img src={`https://picsum.photos/seed/${seed}/${w}/${h}?grayscale`} alt={alt} loading="eager" />
+        <img src={url} alt={alt} loading="eager" />
       </div>
       {caption && <div className="caption">{caption}</div>}
     </Item>
