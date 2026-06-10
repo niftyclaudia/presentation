@@ -192,6 +192,8 @@ body {
 }
 .slide.dark .msg .av { background: var(--paper); color: var(--ink); }
 .msg .av.alt { background: transparent; border: 1px solid var(--line); color: inherit; }
+.msg .av.round { border-radius: 50%; }
+.emoji { filter: grayscale(1); }
 .msg .nm { font-family: var(--f-body); font-weight: 600; font-size: 14px; }
 .msg .nm time { font-family: var(--f-mono); font-weight: 400; font-size: 10px; color: var(--mut-2); margin-left: 10px; }
 .msg .bd { font-family: var(--f-body); font-size: clamp(14px, 1.5vw, 17px); line-height: 1.45; color: var(--mut); margin-top: 4px; }

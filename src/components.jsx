@@ -133,9 +133,8 @@ export function DataMountain() {
 }
 
 /* ============================================================
-   FIGURE — CFO MESSAGE EXCHANGE
-   Editorial message card (no fake browser chrome). The reply lands a
-   beat after the question to carry the timing of the joke.
+   FIGURE — BOSS MESSAGE (clean monochrome mock of the real screenshot)
+   Vector-crisp at any size. The second message lands a beat later.
    ============================================================ */
 export function MessageScene() {
   const reduce = useReducedMotion()
@@ -145,22 +144,23 @@ export function MessageScene() {
       : { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, transition: { ...ITEM.spring, delay } }
   return (
     <Item i={1} className="note">
-      <div className="channel"># general</div>
+      <div className="channel"># team-chat</div>
       <div className="chat">
-        <motion.div className="msg" {...enter(0.5)}>
-          <span className="av">CFO</span>
+        <div className="msg">
+          <span className="av round">B</span>
           <div>
-            <div className="nm">The CFO <time>10:42</time></div>
-            <div className="bd lead">love the demo. this'll be done in a few days, right?</div>
+            <div className="nm">The Boss <time>9:14</time></div>
+            <motion.div className="bd lead" {...enter(0.45)}>
+              Team, did you all see Jenson announce NemoClaw yesterday? I was excited
+              to see a complete, enterprise-level approach to OpenClaw. I'm interested
+              in your take on it.
+            </motion.div>
+            <motion.div className="bd lead" style={{ marginTop: 12 }} {...enter(1.15)}>
+              Also, how are all of you? I should have started with that{' '}
+              <span className="emoji">🙂</span>
+            </motion.div>
           </div>
-        </motion.div>
-        <motion.div className="msg" {...enter(1.15)}>
-          <span className="av alt">YOU</span>
-          <div>
-            <div className="nm">You <time>10:46</time></div>
-            <div className="bd">it's a little more than a few days.</div>
-          </div>
-        </motion.div>
+        </div>
       </div>
     </Item>
   )

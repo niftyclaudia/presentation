@@ -1,5 +1,5 @@
 import {
-  Item, Rule, BrandLogo, Photo, SalaryTable,
+  Item, Rule, BrandLogo, Photo, MessageScene, SalaryTable,
 } from './components.jsx'
 
 /* ============================================================
@@ -101,8 +101,7 @@ export const SLIDES = [
     section: 'The job',
     Content: () => (
       <div className="cols wide-text">
-        <Photo src="/assets/cfo-scenario.png" ratio="119 / 87" maxWidth="480px"
-          alt="A boss message in the team channel" i={1} />
+        <MessageScene />
         <div className="col">
           <Item i={0} as="h2" className="h">
             And what's your take?
