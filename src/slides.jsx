@@ -241,9 +241,9 @@ export const SLIDES = [
             Make it your wow factor.
           </Item>
           <Item i={1} className="body">
-            Once you lock the job, shift everything to your capstone. Make it
-            production-worthy. Make it make money. Show exactly what you can build
-            in three weeks.
+            Make your capstone production-worthy. Make it make money. You're always
+            interviewing, even once you have a job, and a project like this is how you
+            build your network. That is what pushes your career forward.
           </Item>
         </div>
         <Photo src="/assets/stage.jpg" ratio="16 / 9"
