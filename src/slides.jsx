@@ -1,6 +1,7 @@
 import {
   Item, Rule, BrandLogo, Photo, MessageScene, SalaryTable,
 } from './components.jsx'
+import GridField from './GridField.jsx'
 
 /* ============================================================
    SLIDE DEFINITIONS
@@ -26,8 +27,9 @@ export const SLIDES = [
     section: 'Open',
     Content: () => (
       <>
-        <Item i={0}><BrandLogo white height="clamp(96px, 13vw, 168px)" /></Item>
-        <Item i={1} as="h1" className="displg" style={{ marginTop: 34 }}>
+        <GridField />
+        <Item i={0}><BrandLogo white height="clamp(64px, 8vw, 104px)" /></Item>
+        <Item i={1} as="h1" className="displg" style={{ marginTop: 32 }}>
           The Reality Check.
         </Item>
         <Item i={2} className="sub" style={{ maxWidth: '50ch', marginTop: 22 }}>
@@ -285,7 +287,7 @@ export const SLIDES = [
         </Item>
         <Item i={2} className="stack" style={{ marginTop: 34 }}>
           <span className="names">Claudia, Nani and Vanes</span>
-          <BrandLogo white height="clamp(52px, 6vw, 76px)" />
+          <BrandLogo white height="clamp(40px, 5vw, 60px)" />
         </Item>
       </>
     ),

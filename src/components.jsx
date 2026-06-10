@@ -73,11 +73,11 @@ export function Logo({ size = 18, type = true, mark = true, gap = 10 }) {
 
 /* BrandLogo — the real laschicas.ai mark (transparent PNG).
    `white` inverts the black artwork to render on dark slides. */
-export function BrandLogo({ height = 'clamp(64px, 8vw, 96px)', white = false }) {
+export function BrandLogo({ src = '/assets/logo-primary.png', height = 'clamp(60px, 7.5vw, 96px)', white = false }) {
   return (
     <img
       className="brand-logo"
-      src="/assets/logo-stacked.png"
+      src={src}
       alt="laschicas.ai"
       style={{ height, filter: white ? 'invert(1)' : 'none' }}
     />
