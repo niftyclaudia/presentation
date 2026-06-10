@@ -10,10 +10,10 @@ import GridField from './GridField.jsx'
    No section-number eyebrows; the running header carries context.
    No em-dashes anywhere. Separators rationed.
 
-   Structure (per updated outline):
+   Structure:
      Open      : Title, Who we are
-     Part 1    : Paying you (div) / Trap / CFO / High expectations
-     Part 2    : Focus your fire (div) / Risks / Smart negotiation / Salary
+     Part 1    : Paying you (div) / Go past the minimum / High expectations / CFO
+     Part 2    : Focus your fire (div) / Know the role / Smart negotiation / Salary
      Part 3    : 90-day reality (div) / Staying ahead / Capstone
      Close     : Questions
    ============================================================ */
@@ -54,7 +54,7 @@ export const SLIDES = [
           <Item i={3}><Rule style={{ marginTop: 28 }} /></Item>
           <Item i={4} className="body lead">
             Three G3 grads from laschicas.ai, here to give it to you straight.
-            No theory. Just what the job actually felt like.
+            No theory. Just what the job felt like.
           </Item>
         </div>
       </div>
@@ -70,7 +70,7 @@ export const SLIDES = [
     Content: () => (
       <>
         <Item i={0} as="h2" className="disp">
-          Why they're<br />actually paying you.
+          Why they're<br />paying you.
         </Item>
         <Item i={1} className="body lead" style={{ marginTop: 32 }}>
           Demo projects are not production-ready apps.
@@ -79,25 +79,44 @@ export const SLIDES = [
     ),
   },
 
-  /* 04 — THE TRAP --------------------------------------------- */
+  /* 04 — GO PAST THE MINIMUM ---------------------------------- */
   {
-    id: 'trap',
+    id: 'beyond',
     section: 'The job',
     Content: () => (
       <>
         <Item i={0} as="h2" className="hlg">
-          Don't stop at the demo.
+          Go past the minimum.
         </Item>
         <div className="rows">
-          <Item i={1} className="row"><span className="mk">01</span><span className="tx">You can build a demo in 4 hours. That doesn't mean you stop there.</span></Item>
-          <Item i={2} className="row"><span className="mk">02</span><span className="tx">A demo is not a production-ready app.</span></Item>
-          <Item i={3} className="row"><span className="mk">03</span><span className="tx">The job asks you to build at a completely different level.</span></Item>
+          <Item i={1} className="row"><span className="mk">01</span><span className="tx">The minimum requirement is the floor, not the finish line. Go past it.</span></Item>
+          <Item i={2} className="row"><span className="mk">02</span><span className="tx">Take advantage of the tokens. The compute is right there. Use it.</span></Item>
+          <Item i={3} className="row"><span className="mk">03</span><span className="tx">Essentials are handled, laundry, food, cleaning. Your time here is for building.</span></Item>
         </div>
       </>
     ),
   },
 
-  /* 05 — CFO / BOSS SCENARIO (message scene + text) ----------- */
+  /* 05 — HIGH EXPECTATIONS (dark) ----------------------------- */
+  {
+    id: 'avengers',
+    dark: true,
+    section: 'The job',
+    Content: () => (
+      <>
+        <Item i={0} as="h2" className="hlg">
+          They expect the Avengers.
+        </Item>
+        <Item i={1}><Rule style={{ marginTop: 28 }} /></Item>
+        <Item i={2} className="body lead">
+          Complex projects delivered in a few days, not a few months.
+          That's the bar in their head the day you walk in.
+        </Item>
+      </>
+    ),
+  },
+
+  /* 06 — CFO / BOSS SCENARIO (message mock + text) ------------ */
   {
     id: 'cfo',
     section: 'The job',
@@ -118,25 +137,6 @@ export const SLIDES = [
     ),
   },
 
-  /* 06 — HIGH EXPECTATIONS (dark) ----------------------------- */
-  {
-    id: 'avengers',
-    dark: true,
-    section: 'The job',
-    Content: () => (
-      <>
-        <Item i={0} as="h2" className="hlg">
-          They expect the Avengers.
-        </Item>
-        <Item i={1}><Rule style={{ marginTop: 28 }} /></Item>
-        <Item i={2} className="body lead">
-          Complex projects delivered in a few days, not a few months.
-          That's the bar in their head the day you walk in.
-        </Item>
-      </>
-    ),
-  },
-
   /* 07 — DIVIDER: OFFERS / FOCUS YOUR FIRE (dark) ------------- */
   {
     id: 'div-offers',
@@ -149,28 +149,28 @@ export const SLIDES = [
           Focus your fire.
         </Item>
         <Item i={1} className="body lead" style={{ marginTop: 32 }}>
-          Stop chasing six-plus offers at once.
+          In the coming weeks, some of you will have multiple offers.
         </Item>
         <Item i={2} className="body" style={{ marginTop: 12 }}>
-          Learn from the ones before you. Cohorts 2, 3 and 4 all found this out the hard way.
+          Before you pick, understand what each one is asking you to do. More on that next.
         </Item>
       </>
     ),
   },
 
-  /* 08 — RISKS OF HOARDING ------------------------------------ */
+  /* 08 — KNOW THE ROLE ---------------------------------------- */
   {
-    id: 'risks',
+    id: 'role',
     section: 'Offers',
     Content: () => (
       <>
         <Item i={0} as="h2" className="hlg">
-          Waiting has a real cost.
+          Know what you're signing up for.
         </Item>
         <div className="rows">
-          <Item i={1} className="row"><span className="mk">01</span><span className="tx">Collecting six offers before you commit is a risk in itself.</span></Item>
-          <Item i={2} className="row"><span className="mk">02</span><span className="tx">Another cohort member can say yes to your top company first.</span></Item>
-          <Item i={3} className="row"><span className="mk">03</span><span className="tx">Companies pull offers off the table when you wait too long.</span></Item>
+          <Item i={1} className="row"><span className="mk">01</span><span className="tx">Understand the role, not just the title.</span></Item>
+          <Item i={2} className="row"><span className="mk">02</span><span className="tx">Is there a team around you, or are you the solo AI engineer?</span></Item>
+          <Item i={3} className="row"><span className="mk">03</span><span className="tx">You might think you're there to code when they want a PM.</span></Item>
         </div>
       </>
     ),
@@ -189,7 +189,6 @@ export const SLIDES = [
         <Item i={2} className="body lead">
           The people who earn above base bring real experience and judgment, not just
           good prompts. Every dollar you ask for raises what they expect from you.
-          So ask for the money, then ask for help.
         </Item>
       </>
     ),
@@ -202,12 +201,12 @@ export const SLIDES = [
     Content: () => (
       <>
         <Item i={0} as="h2" className="h" style={{ marginBottom: 6 }}>
-          What the market actually pays.
+          What the market pays.
         </Item>
         <SalaryTable />
         <Item i={3} className="cap">
           <b>More pay, more pressure.</b> Every extra dollar raises what they expect
-          you to deliver. Set expectations you can actually sustain.
+          you to deliver. Set expectations you can sustain.
           <span className="src"> Source: Fonzi talent marketplace.</span>
         </Item>
       </>
@@ -245,7 +244,7 @@ export const SLIDES = [
         <div className="rows">
           <Item i={1} className="row"><span className="mk">01</span><span className="tx">The 90-day return policy is real, and it doesn't end at 90 days.</span></Item>
           <Item i={2} className="row"><span className="mk">02</span><span className="tx">Show up to AI events. Keep learning. Keep testing new tools.</span></Item>
-          <Item i={3} className="row"><span className="mk">03</span><span className="tx">Build a network, and make it one that's actually useful.</span></Item>
+          <Item i={3} className="row"><span className="mk">03</span><span className="tx">Build a network, and make it one that's useful.</span></Item>
         </div>
       </>
     ),
@@ -264,7 +263,7 @@ export const SLIDES = [
           <Item i={1} className="body">
             Once you lock the job, shift everything to your capstone. Make it
             production-worthy. Make it make money. Show exactly what you can build
-            in three weeks. That proof outlasts the interview.
+            in three weeks.
           </Item>
         </div>
         <Photo src="/assets/stage.jpg" ratio="16 / 9"
