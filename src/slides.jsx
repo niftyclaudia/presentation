@@ -1,5 +1,5 @@
 import {
-  Item, Rule, BrandLogo, Photo, MessageScene, SalaryTable,
+  Item, Rule, BrandLogo, Photo, SalaryTable,
 } from './components.jsx'
 import GridField from './GridField.jsx'
 
@@ -116,28 +116,7 @@ export const SLIDES = [
     ),
   },
 
-  /* 06 — CFO / BOSS SCENARIO (message mock + text) ------------ */
-  {
-    id: 'cfo',
-    section: 'The job',
-    Content: () => (
-      <div className="cols wide-text">
-        <MessageScene />
-        <div className="col">
-          <Item i={0} as="h2" className="h">
-            And what's your take?
-          </Item>
-          <Item i={2} className="body">
-            The day you're the AI hire, leadership expects you to track every launch
-            and have an opinion ready. Knowing the landscape becomes part of the job,
-            not a bonus.
-          </Item>
-        </div>
-      </div>
-    ),
-  },
-
-  /* 07 — DIVIDER: OFFERS / FOCUS YOUR FIRE (dark) ------------- */
+  /* 06 — DIVIDER: OFFERS / FOCUS YOUR FIRE (dark) ------------- */
   {
     id: 'div-offers',
     dark: true,
@@ -152,7 +131,7 @@ export const SLIDES = [
           In the coming weeks, some of you will have multiple offers.
         </Item>
         <Item i={2} className="body" style={{ marginTop: 12 }}>
-          Before you pick, understand what each one is asking you to do. More on that next.
+          Know what each role is asking, and how to negotiate it. More on both next.
         </Item>
       </>
     ),
@@ -171,6 +150,7 @@ export const SLIDES = [
           <Item i={1} className="row"><span className="mk">01</span><span className="tx">Understand the role, not just the title.</span></Item>
           <Item i={2} className="row"><span className="mk">02</span><span className="tx">Is there a team around you, or are you the solo AI engineer?</span></Item>
           <Item i={3} className="row"><span className="mk">03</span><span className="tx">You might think you're there to code when they want a PM.</span></Item>
+          <Item i={4} className="row"><span className="mk">04</span><span className="tx">Stay flexible. The role they need may not be the one you pictured, and that's okay.</span></Item>
         </div>
       </>
     ),
@@ -222,7 +202,7 @@ export const SLIDES = [
     Content: () => (
       <>
         <Item i={0} as="h2" className="disp">
-          The 90-day reality<br />and negotiation.
+          The 90-day<br />reality.
         </Item>
         <Item i={1} className="body lead" style={{ marginTop: 32 }}>
           The return policy is real, and it goes well beyond 90 days.

@@ -50,13 +50,14 @@ Dark slides are deliberate act-breaks: **title, the 3 part-dividers (chapter 1/2
 and the close.** Everything else is light. Section labels in the header:
 `Open` / `The job` / `Offers` / `Staying in the job` / `Close`.
 
-## Current slide order (14)
+## Current slide order (13)
 1 Title · 2 Who we are · **Part 1 The job:** 3 Why they're paying you (div) ·
-4 Go past the minimum · 5 They expect the Avengers · 6 And what's your take? (CFO mock) ·
-**Part 2 Offers:** 7 Focus your fire (div) · 8 Know what you're signing up for ·
-9 Every dollar raises the bar · 10 What the market pays (salary table) ·
-**Part 3 Staying in:** 11 The 90-day reality (div) · 12 Job security is staying ahead ·
-13 Make it your wow factor (capstone) · 14 Now go survive the job (close).
+4 Go past the minimum · 5 They expect the Avengers ·
+**Part 2 Offers:** 6 Focus your fire (div, previews offers + negotiation) ·
+7 Know what you're signing up for (role, incl. stay flexible) ·
+8 Every dollar raises the bar (negotiation) · 9 What the market pays (salary table) ·
+**Part 3 Staying in:** 10 The 90-day reality (div) · 11 Job security is staying ahead ·
+12 Make it your wow factor (capstone) · 13 Now go survive the job (close).
 
 ## Assets (`public/assets/`, served at `/assets/*`)
 - `logo-primary.png` — transparent horizontal lockup (mark + wordmark). **Default** for
