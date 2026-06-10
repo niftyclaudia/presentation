@@ -46,7 +46,7 @@ export const SLIDES = [
     section: 'Open',
     Content: () => (
       <div className="cols">
-        <Photo src="/assets/team.jpg" ratio="16 / 11"
+        <Photo src="/assets/team.jpg" ratio="16 / 9"
           alt="Claudia, Nani and Vanes" caption="Las chicas, G3" />
         <div className="col">
           <Item i={2} as="h2" className="hlg">
@@ -268,7 +268,7 @@ export const SLIDES = [
             in three weeks. That proof outlasts the interview.
           </Item>
         </div>
-        <Photo src="/assets/stage.jpg" ratio="16 / 10"
+        <Photo src="/assets/stage.jpg" ratio="16 / 9"
           alt="Capstone demo on stage" caption="Capstone demo day, Build a D1 Athlete" i={1} />
       </div>
     ),
