@@ -1,8 +1,6 @@
 import {
-  Item, Rule, Logo, BrandLogo, Photo,
-  MessageScene, SalaryTable,
+  Item, Rule, BrandLogo, Photo, SalaryTable,
 } from './components.jsx'
-import GridField from './GridField.jsx'
 
 /* ============================================================
    SLIDE DEFINITIONS
@@ -28,9 +26,8 @@ export const SLIDES = [
     section: 'Open',
     Content: () => (
       <>
-        <GridField />
-        <Item i={0}><BrandLogo white height="clamp(72px, 9vw, 108px)" /></Item>
-        <Item i={1} as="h1" className="displg" style={{ marginTop: 30 }}>
+        <Item i={0}><BrandLogo white height="clamp(96px, 13vw, 168px)" /></Item>
+        <Item i={1} as="h1" className="displg" style={{ marginTop: 34 }}>
           The Reality Check.
         </Item>
         <Item i={2} className="sub" style={{ maxWidth: '50ch', marginTop: 22 }}>
@@ -104,15 +101,16 @@ export const SLIDES = [
     section: 'The job',
     Content: () => (
       <div className="cols wide-text">
-        <MessageScene />
+        <Photo src="/assets/cfo-scenario.png" ratio="119 / 87" maxWidth="480px"
+          alt="A boss message in the team channel" i={1} />
         <div className="col">
-          <Item i={1} as="h2" className="h">
-            “This will be done in a few days.”
+          <Item i={0} as="h2" className="h">
+            And what's your take?
           </Item>
           <Item i={2} className="body">
-            AI tools let non-technical people spin up something that works in an
-            afternoon. So they assume the real thing ships just as fast. It won't.
-            Understand that going in.
+            The day you're the AI hire, leadership expects you to track every launch
+            and have an opinion ready. Knowing the landscape becomes part of the job,
+            not a bonus.
           </Item>
         </div>
       </div>

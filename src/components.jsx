@@ -87,11 +87,11 @@ export function BrandLogo({ height = 'clamp(64px, 8vw, 96px)', white = false }) 
 /* Photo — real grayscale photography in a clean frame.
    Uses picsum seeds as swap-ready placeholders; replace the src with
    the real team / stage shot. Caption sits BELOW the frame, never on it. */
-export function Photo({ src, seed, w, h, ratio = '4 / 5', alt, caption, i = 1 }) {
+export function Photo({ src, seed, w, h, ratio = '4 / 5', alt, caption, i = 1, maxWidth }) {
   const url = src || `https://picsum.photos/seed/${seed}/${w}/${h}?grayscale`
   return (
     <Item i={i} className="figure">
-      <div className="photo" style={{ aspectRatio: ratio }}>
+      <div className="photo" style={{ aspectRatio: ratio, maxWidth }}>
         <img src={url} alt={alt} loading="eager" />
       </div>
       {caption && <div className="caption">{caption}</div>}
