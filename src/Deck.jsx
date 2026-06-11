@@ -46,7 +46,7 @@ export default function Deck() {
   }, [next, prev])
 
   const slide = SLIDES[idx]
-  const cls = ['slide', slide.dark ? 'dark' : '', slide.center ? 'center' : ''].filter(Boolean).join(' ')
+  const cls = ['slide', slide.dark ? 'dark' : '', slide.center ? 'center' : '', slide.chapter ? 'divider' : ''].filter(Boolean).join(' ')
 
   return (
     <MotionConfig reducedMotion="user">

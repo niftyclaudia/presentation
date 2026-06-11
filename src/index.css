@@ -56,6 +56,9 @@ body {
 }
 .slide.center { align-items: center; text-align: center; }
 
+/* section dividers: extra bottom clearance so body copy never crowds the footer */
+.slide.divider { padding-bottom: clamp(132px, 16vh, 200px); }
+
 /* dark slides — deliberate act-break theme (dividers, title, close) */
 .slide.dark {
   background: var(--ink);
