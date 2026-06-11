@@ -61,71 +61,38 @@ export const SLIDES = [
     ),
   },
 
-  /* 03 — DIVIDER: THE JOB (dark) ------------------------------ */
+  /* 03 — WHY WE'RE HERE --------------------------------------- */
   {
-    id: 'div-job',
-    dark: true,
-    section: 'The job',
-    chapter: '1',
-    Content: () => (
-      <>
-        <Item i={0} as="h2" className="disp">
-          Why they're<br />paying you.
-        </Item>
-        <Item i={1} className="body lead" style={{ marginTop: 32 }}>
-          Demo projects are not production-ready apps.
-        </Item>
-      </>
-    ),
-  },
-
-  /* 04 — GO PAST THE MINIMUM ---------------------------------- */
-  {
-    id: 'beyond',
-    section: 'The job',
+    id: 'why-here',
+    section: 'Open',
     Content: () => (
       <>
         <Item i={0} as="h2" className="hlg">
-          Go past the minimum.
-        </Item>
-        <div className="rows">
-          <Item i={1} className="row"><span className="mk">01</span><span className="tx">The minimum requirement is the floor, not the finish line. Go past it.</span></Item>
-          <Item i={2} className="row"><span className="mk">02</span><span className="tx">Take advantage of the tokens. The compute is right there. Use it.</span></Item>
-          <Item i={3} className="row"><span className="mk">03</span><span className="tx">Essentials are handled, laundry, food, cleaning. Your time here is for building.</span></Item>
-        </div>
-      </>
-    ),
-  },
-
-  /* 05 — HIGH EXPECTATIONS (dark) ----------------------------- */
-  {
-    id: 'avengers',
-    dark: true,
-    section: 'The job',
-    Content: () => (
-      <>
-        <Item i={0} as="h2" className="hlg">
-          They expect the Avengers.
+          Why we're here.
         </Item>
         <Item i={1}><Rule style={{ marginTop: 28 }} /></Item>
         <Item i={2} className="body lead">
-          Complex projects delivered in a few days, not a few months.
-          That's the bar in their head the day you walk in.
+          We've watched cohort after cohort hit the same walls after graduation.
+          The same surprises on the job, the same offer decisions, the same rocky
+          first 90 days.
+        </Item>
+        <Item i={3} className="body" style={{ marginTop: 12 }}>
+          We pulled the patterns together so you can see them coming.
         </Item>
       </>
     ),
   },
 
-  /* 06 — DIVIDER: OFFERS / FOCUS YOUR FIRE (dark) ------------- */
+  /* DIVIDER: OFFERS (dark) ------------------------------------ */
   {
     id: 'div-offers',
     dark: true,
     section: 'Offers',
-    chapter: '2',
+    chapter: '1',
     Content: () => (
       <>
         <Item i={0} as="h2" className="disp">
-          Focus your fire.
+          Know what you're<br />signing up for.
         </Item>
         <Item i={1} className="body lead" style={{ marginTop: 32 }}>
           In the coming weeks, some of you will have multiple offers.
@@ -144,7 +111,7 @@ export const SLIDES = [
     Content: () => (
       <>
         <Item i={0} as="h2" className="hlg">
-          Know what you're signing up for.
+          Read the role, not the title.
         </Item>
         <div className="rows">
           <Item i={1} className="row"><span className="mk">01</span><span className="tx">Understand the role, not just the title.</span></Item>
@@ -193,7 +160,89 @@ export const SLIDES = [
     ),
   },
 
-  /* 11 — DIVIDER: STAYING IN (dark) --------------------------- */
+  /* CAPSTONE (text + stage photo) ----------------------------- */
+  {
+    id: 'capstone',
+    section: 'Offers',
+    Content: () => (
+      <div className="cols">
+        <div className="col">
+          <Item i={0} as="h2" className="h">
+            Make it your wow factor.
+          </Item>
+          <Item i={1} className="body">
+            Make your capstone production-worthy. Make it make money. You're always
+            interviewing, even once you have a job, and a project like this is how you
+            build your network. That is what pushes your career forward.
+          </Item>
+        </div>
+        <Photo src="/assets/stage.jpg" ratio="16 / 9"
+          alt="Capstone demo on stage" caption="Capstone demo day, Build a D1 Athlete" i={1} />
+      </div>
+    ),
+  },
+
+  /* DIVIDER: THE JOB (dark) ----------------------------------- */
+  {
+    id: 'div-job',
+    dark: true,
+    section: 'The job',
+    chapter: '2',
+    Content: () => (
+      <>
+        <Item i={0} as="h2" className="disp">
+          Why they're<br />paying you.
+        </Item>
+        <Item i={1} className="body lead" style={{ marginTop: 32 }}>
+          You're the AI expert in the room. They're paying for someone who knows
+          what's possible this week, not last year.
+        </Item>
+        <Item i={2} className="body" style={{ marginTop: 12 }}>
+          If you're not that person yet, get glued to Twitter. That's where the
+          field moves first.
+        </Item>
+      </>
+    ),
+  },
+
+  /* GO PAST THE MINIMUM --------------------------------------- */
+  {
+    id: 'beyond',
+    section: 'The job',
+    Content: () => (
+      <>
+        <Item i={0} as="h2" className="hlg">
+          Go past the minimum.
+        </Item>
+        <div className="rows">
+          <Item i={1} className="row"><span className="mk">01</span><span className="tx">The minimum requirement is the floor, not the finish line. Go past it.</span></Item>
+          <Item i={2} className="row"><span className="mk">02</span><span className="tx">Take advantage of the tokens. The compute is right there. Use it.</span></Item>
+          <Item i={3} className="row"><span className="mk">03</span><span className="tx">Essentials are handled, laundry, food, cleaning. Your time here is for building.</span></Item>
+        </div>
+      </>
+    ),
+  },
+
+  /* HIGH EXPECTATIONS (dark) ---------------------------------- */
+  {
+    id: 'avengers',
+    dark: true,
+    section: 'The job',
+    Content: () => (
+      <>
+        <Item i={0} as="h2" className="hlg">
+          They expect the Avengers.
+        </Item>
+        <Item i={1}><Rule style={{ marginTop: 28 }} /></Item>
+        <Item i={2} className="body lead">
+          Complex projects delivered in a few days, not a few months.
+          That's the bar in their head the day you walk in.
+        </Item>
+      </>
+    ),
+  },
+
+  /* DIVIDER: STAYING IN (dark) -------------------------------- */
   {
     id: 'div-stay',
     dark: true,
@@ -230,29 +279,7 @@ export const SLIDES = [
     ),
   },
 
-  /* 13 — CAPSTONE (text + stage photo) ------------------------ */
-  {
-    id: 'capstone',
-    section: 'Staying in the job',
-    Content: () => (
-      <div className="cols">
-        <div className="col">
-          <Item i={0} as="h2" className="h">
-            Make it your wow factor.
-          </Item>
-          <Item i={1} className="body">
-            Make your capstone production-worthy. Make it make money. You're always
-            interviewing, even once you have a job, and a project like this is how you
-            build your network. That is what pushes your career forward.
-          </Item>
-        </div>
-        <Photo src="/assets/stage.jpg" ratio="16 / 9"
-          alt="Capstone demo on stage" caption="Capstone demo day, Build a D1 Athlete" i={1} />
-      </div>
-    ),
-  },
-
-  /* 14 — CLOSE (dark) ----------------------------------------- */
+  /* CLOSE (dark) ---------------------------------------------- */
   {
     id: 'close',
     dark: true,
