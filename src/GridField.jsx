@@ -18,8 +18,8 @@ const CFG = {
   lineAlpha: 0.06,     // resting grid line opacity
   spawnChance: 0.022,  // probability of a new pulse per frame
   maxPulses: 7,
-  speedMin: 0.9,
-  speedMax: 2.0,
+  speedMin: 0.45,
+  speedMax: 1.0,
   trailMin: 70,
   trailMax: 180,
 }
