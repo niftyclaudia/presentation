@@ -111,10 +111,10 @@ export const SLIDES = [
     Content: () => (
       <>
         <Item i={0} as="h2" className="hlg">
-          Read the role, not the title.
+          The role behind the title.
         </Item>
         <div className="rows">
-          <Item i={1} className="row"><span className="mk">01</span><span className="tx">Understand the role, not just the title.</span></Item>
+          <Item i={1} className="row"><span className="mk">01</span><span className="tx">The title tells you little. Ask what you'll own day to day.</span></Item>
           <Item i={2} className="row"><span className="mk">02</span><span className="tx">Is there a team around you, or are you the solo AI engineer?</span></Item>
           <Item i={3} className="row"><span className="mk">03</span><span className="tx">You might think you're there to code when they want a PM.</span></Item>
           <Item i={4} className="row"><span className="mk">04</span><span className="tx">Stay flexible. The role they need may not be the one you pictured, and that's okay.</span></Item>
